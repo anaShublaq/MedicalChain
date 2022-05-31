@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="medicalchain_finalproject.PatientPageReviewController">
+    <children>
+        <Label layoutX="125.0" layoutY="14.0" text="Patient Information" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="31.0" />
+            </font>
+        </Label>
+        <GridPane layoutX="32.0" layoutY="118.0" prefHeight="71.0" prefWidth="372.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="242.0" minWidth="10.0" prefWidth="136.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="500.0" minWidth="100.0" prefWidth="236.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="35.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="35.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="35.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="Patient First Name" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="textFieldPatientIdNumber" disable="true" style="-fx-text-fill: green; -fx-opacity: 1;" GridPane.columnIndex="1">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                </TextField>
+                <TextField fx:id="textFieldPatientFirstName" disable="true" style="-fx-text-fill: green; -fx-opacity: 1;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                </TextField>
+                <Label text="Patient Last Name" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="textFieldPatientLastName" disable="true" style="-fx-text-fill: green; -fx-opacity: 1;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                </TextField>
+                <Label text="Patient ID Number">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+            </children>
+        </GridPane>
+        <GridPane layoutX="32.0" layoutY="257.0" prefHeight="120.0" prefWidth="344.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.0" minWidth="10.0" prefWidth="117.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="500.0" minWidth="100.0" prefWidth="227.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="Patient City">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Label text="Patient Address" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Label text="Patient Number" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="textFieldPatientCity" disable="true" minWidth="50.0" prefHeight="25.0" prefWidth="92.0" style="-fx-text-fill: green; -fx-opacity: 1;" GridPane.columnIndex="1">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                </TextField>
+                <TextField fx:id="textFieldPatientAddress" disable="true" style="-fx-text-fill: green; -fx-opacity: 1;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                </TextField>
+                <TextField fx:id="textFieldPatientNumber" disable="true" style="-fx-text-fill: green; -fx-opacity: 1;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                </TextField>
+            </children>
+        </GridPane>
+        <HBox layoutX="32.0" layoutY="446.0" prefHeight="47.0" prefWidth="496.0">
+            <children>
+                <Button fx:id="backButton" minWidth="107.0" mnemonicParsing="false" onAction="#backButtonHandle" prefHeight="47.0" prefWidth="120.0" style="-fx-background-color: red;" text="Back" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets right="220.0" />
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="continueButton" minWidth="65.0" mnemonicParsing="false" onAction="#continueButtonHandle" prefHeight="47.0" prefWidth="129.0" style="-fx-background-color: green;" text="Continue -&gt;&gt;" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets right="20.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>
